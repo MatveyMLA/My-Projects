@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>statefulWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <display-name>GetNumsServlet</display-name>
+    <servlet-name>GetNumsServlet</servlet-name>
+    <servlet-class>com.mati.statefulWeb.servlets.GetNumsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetNumsServlet</servlet-name>
+    <url-pattern>/GetNumsServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>SetNumServlet</display-name>
+    <servlet-name>SetNumServlet</servlet-name>
+    <servlet-class>com.mati.statefulWeb.servlets.SetNumServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SetNumServlet</servlet-name>
+    <url-pattern>/SetNumServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>GetTotalServlet</display-name>
+    <servlet-name>GetTotalServlet</servlet-name>
+    <servlet-class>com.mati.statefulWeb.servlets.GetTotalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetTotalServlet</servlet-name>
+    <url-pattern>/GetTotalServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ExitServlet</display-name>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.mati.statefulWeb.servlets.ExitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/ExitServlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
