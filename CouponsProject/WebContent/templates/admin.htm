@@ -1,0 +1,13 @@
+<div ng-controller = "AdminController as AdminCtrl">
+
+<h3>Administrator</h3>
+
+	Companies: <select ng-model="choosenCompany" required="required" ng-options="oneCompany.name for oneCompany in allCompanies" ng-change = "hasChangedCompanies()">
+    				<option value="">-- Choose Company --</option>
+			   </select>
+    <button ng-click = "setView('/createcompany')">Create Company</button><br><br>
+	Customers: <select ng-model="choosenCustomer" required="required" ng-options="oneCustomer.name for oneCustomer in allCustomers" ng-change = "hasChangedCustomers()">
+    				<option value="">-- Choose Customer --</option>
+  			   </select>
+    <button ng-click = "setView('/createcustomer')">Create Customer</button>
+</div>

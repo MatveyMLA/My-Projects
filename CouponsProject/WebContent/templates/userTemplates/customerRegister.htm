@@ -1,0 +1,14 @@
+<div ng-controller="UserController as UserCtrl">
+	<h3>Company Registration</h3>
+    <form name = "customerRegisterForm" ng-submit="customerRegisterForm.$valid && customerRegisterFunction()" novalidate>
+
+        User Name: <input type="text" ng-model="customer.name" required>
+        <br><br>
+
+        Password: <input type="password" ng-model="customer.password" required>
+        <br><br>
+
+        <input type="submit" value="register" >
+
+    </form>
+</div>

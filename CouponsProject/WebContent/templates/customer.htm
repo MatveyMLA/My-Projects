@@ -1,0 +1,9 @@
+<div ng-controller = "CustomerController as CustCtrl">
+
+<h3>Choose Coupon From Coupon List</h3>
+	Coupons: <select ng-model="choosenCoupon" required="required" ng-options="oneCoupon.title for oneCoupon in allCoupons" ng-change = "hasChanged()">
+    	<option value="">-- Choose Coupon --</option>
+    </select><br><br>
+    <h4><a href ng-click = "getCouponsByCustomerId()">My Coupons</a></h4><br><br>
+
+</div>

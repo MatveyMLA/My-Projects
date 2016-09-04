@@ -1,0 +1,15 @@
+<div ng-controller = "AdminController as AdminCtrl">
+	<h3>Create Customer</h3>
+	<form  ng-submit="createCustomer()" >
+	
+		Name: <input type="text" ng-model="customer.name" required/>
+		<br><br>
+		
+		Password: <input type="text" ng-model="customer.password" required/>
+		<br><br>
+						
+		<input type="submit" value="Create" />
+		<br><br>
+	</form>
+
+</div>

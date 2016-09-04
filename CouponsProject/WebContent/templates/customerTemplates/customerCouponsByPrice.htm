@@ -1,0 +1,7 @@
+<div ng-controller = "CustomerController as CustCtrl" >
+    <h3>Choose Coupon</h3><br>
+    Coupons: <select ng-model="choosenCoupon" ng-options="oneCoupon.title for oneCoupon in couponsByPriceAndCustumerId" ng-change = "hasChangedCustomerCoupons()">
+    	<option value="">-- Choose Coupon --</option>
+    </select>
+  
+</div>
