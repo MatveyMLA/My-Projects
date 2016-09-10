@@ -40,7 +40,6 @@
 			<artifactId>jersey-servlet</artifactId>
 			<version>1.19</version>
 		</dependency>
-		
 		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
 		<dependency>
 			<groupId>com.sun.jersey</groupId>
@@ -61,14 +60,6 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.39</version>
 		</dependency>
-		<!--
-		 https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core 
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.7.3</version>
-		</dependency>
-		-->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -101,39 +92,6 @@
 			<artifactId>jackson-mapper-asl</artifactId>
 			<version>1.9.2</version>
 		</dependency>
-		
-		<!-- https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-xc 
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-xc</artifactId>
-			<version>1.9.2</version>
-		</dependency>
-		-->
-		<!-- 
-		https://mvnrepository.com/artifact/asm/asm
-		<dependency>
-			<groupId>asm</groupId>
-			<artifactId>asm</artifactId>
-			<version>3.1</version>
-		</dependency>
-		 -->
-		<!-- 
-		https://mvnrepository.com/artifact/org.codehaus.jettison/jettison 
-		<dependency>
-			<groupId>org.codehaus.jettison</groupId>
-			<artifactId>jettison</artifactId>
-			<version>1.1</version>
-		</dependency>
-		-->
-		<!-- 
-		https://mvnrepository.com/artifact/javax.ws.rs/jsr311-api 
-		<dependency>
-			<groupId>javax.ws.rs</groupId>
-			<artifactId>jsr311-api</artifactId>
-			<version>1.1.1</version>
-		</dependency> 
-		-->
 	</dependencies>
-
 
 </project>
