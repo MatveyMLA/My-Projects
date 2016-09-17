@@ -1,0 +1,7 @@
+<div ng-controller = "CompanyController as CompCtrl" >
+    
+    <select ng-model="choosenCoupon" ng-options="oneCoupon.title for oneCoupon in couponsByType" ng-change = "hasChanged()">
+    	<option value="">-- Choose Coupon --</option>
+    </select>
+  
+</div>

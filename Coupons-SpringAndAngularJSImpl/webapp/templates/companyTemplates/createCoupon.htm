@@ -1,0 +1,42 @@
+<div ng-controller = "CompanyController as CompCtrl">
+	<h3>Create Coupon</h3>
+	<form  ng-submit="createCoupon()" >
+	
+		Title: <input type="text" ng-model="coupon.title" required/>
+		<br><br>
+		
+		Start Date: <input type="date" ng-model="coupon.startDate" required/>
+		<br><br>
+		
+		End Date: <input type="date" ng-model="coupon.endDate" required/>
+		<br><br>
+		
+		Amount: <input type="number" ng-model="coupon.amountOfCoupons" required/>
+		<br><br>
+		
+		Type: <select ng-model = "coupon.type">
+  					<option value="FOOD">Food</option>
+  					<option value="TRAVEL">Travel</option>
+ 					<option value="CLOTHES">Clothes</option>
+ 					<option value="ELECTRONICS">Electronics</option>
+ 					<option value="MEDICINE">Medicine</option>
+ 					<option value="ENTERTAINMENT">Entertainment</option>
+ 					<option value="EDUCATION">Education</option>
+ 					<option value="GENERAL">General</option>
+				</select>
+		<br><br>
+		
+		Message: <input type="text" ng-model="coupon.message" required/>
+		<br><br>
+		
+		Price: <input type="number" ng-model="coupon.price" required/>
+		<br><br>
+		
+		Image: <input type="text" ng-model="coupon.image" required/>
+		<br><br>
+		
+		<input type="submit" value="Create" />
+		<br><br>
+	</form>
+
+</div>

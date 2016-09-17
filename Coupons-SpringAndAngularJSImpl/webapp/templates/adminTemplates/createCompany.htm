@@ -1,0 +1,18 @@
+<div ng-controller = "AdminController as AdminCtrl">
+	<h3>Create Company</h3>
+	<form  ng-submit="createCompany()" >
+	
+		Name: <input type="text" ng-model="company.name" required/>
+		<br><br>
+		
+		EMail: <input type="email" ng-model="company.email" required/>
+		<br><br>
+		
+		Password: <input type="text" ng-model="company.password" required/>
+		<br><br>
+						
+		<input type="submit" value="Create" />
+		<br><br>
+	</form>
+
+</div>

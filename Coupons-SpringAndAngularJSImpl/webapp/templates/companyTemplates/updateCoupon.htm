@@ -1,0 +1,27 @@
+<div ng-controller = "CompanyController as CompCtrl">
+	<h3>Update Coupon</h3>
+	<form  ng-submit="updateCoupon()" >
+	
+		Title: {{myCoupon.title}}
+		<br><br>
+		
+		End Date: <input type="date" ng-model="myCoupon.endDate" required/>
+		<br><br>
+		
+		Amount: <input type="text" ng-model="myCoupon.amountOfCoupons" required/>
+		<br><br>
+					
+		Message: <input type="text" ng-model="myCoupon.message" required/>
+		<br><br>
+		
+		Price: <input type="text" ng-model="myCoupon.price" required/>
+		<br><br>
+		
+		Image: <input type="text" ng-model="myCoupon.image" required/>
+		<br><br>
+		
+		<input type="submit" value="Update" />
+		<br><br>
+	</form>
+
+</div>

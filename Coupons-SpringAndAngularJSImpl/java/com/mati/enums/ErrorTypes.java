@@ -1,0 +1,34 @@
+package com.mati.enums;
+
+public enum ErrorTypes {
+
+	COUPON_ALREDY_EXSISTS(1),	
+	GENERAL_ERROR(2),
+	FALSE_COMPANY_INFORMATION(3),
+	FALSE_COUPON_INFORMATION(4),
+	FALSE_CUSTOMER_INFORMATION(5),
+	COUPON_NOT_FOUND(6),
+	NO_MORE_COUPONS(7),
+	COMPANY_ALREDY_EXSISTS(8),
+	COMPANY_DOES_NOT_EXSIST(9),
+	CUSTOMER_NOT_FOUND(10),
+	CUSTOMER_ALREADY_EXSISTS(11),
+	CUSTOMER_ALREADY_HAVE_COUPON(12),
+	INVALID_USER_NAME_OR_PASSWORD(13),
+	COUPON_EXPIRATION_TASK(14),
+	FALSE_USER_INFORMATION(15),
+	CUSTOMER_DOESNT_HAVE_THE_COUPON(16);
+	
+
+	
+	private int errorCode;
+	
+	private ErrorTypes(int errorCode) {
+		this.errorCode = errorCode;
+	}
+
+	public int getErrorCode() {
+		return errorCode;
+	}
+	
+}

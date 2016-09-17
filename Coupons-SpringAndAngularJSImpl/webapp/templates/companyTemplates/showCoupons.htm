@@ -1,0 +1,12 @@
+<div ng-controller = "CompanyController as CompCtrl" >
+
+<h3>My Coupons</h3>
+    
+    Choose Coupon: <select ng-model="choosenCoupon" required="required" ng-options="oneCoupon.title for oneCoupon in allCouponByCompanyId" ng-change = "hasChanged()">
+    	<option value="">-- Choose Coupon --</option>
+    </select><br><br>
+    
+    <h4><a href ng-click = "setView('/couponsbycriterias')">Coupons By Criterias</a></h4>
+  
+  
+</div>

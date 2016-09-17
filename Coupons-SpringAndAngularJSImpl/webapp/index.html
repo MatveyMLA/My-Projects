@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="CouponsApp">
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script type="text/javascript" src="modules/CouponsApp.js"></script>
+<script type="text/javascript" src="modules/UserModule.js"></script>
+<script type="text/javascript" src="modules/CompanyModule.js"></script>
+<script type="text/javascript" src="modules/AdminModule.js"></script>
+<script type="text/javascript" src="modules/CustomerModule.js"></script>
+<script type="text/javascript" src="modules/CouponModule.js"></script>
+<link 	href="styles/style.css" rel="stylesheet">
+
+<title>COUPOLANDIA</title>
+</head>
+
+<body ng-controller ='CouponsController as CoupCtrl' style="text-align: center;" >
+	
+	<h2>Coupolandia</h2>
+
+	<div ng-view></div>
+	 
+	<user-info ></user-info>
+	
+</body>
+
+</html>

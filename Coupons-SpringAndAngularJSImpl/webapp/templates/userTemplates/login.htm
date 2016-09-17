@@ -1,0 +1,19 @@
+<div ng-controller="UserController as UserCtrl">
+	<h3>Login</h3>
+	<form name = "loginForm" ng-submit="loginForm.$valid && loginFucntion()" novalidate>
+	
+		User Name: <input type="text" ng-model="user.userName" required>
+		<br><br>
+		
+		Password: <input type="password" ng-model="user.password" required>
+		<br><br>
+		
+		<input type="submit" value="login" />
+		<br>
+		
+		
+	</form>
+	
+	<h4><a href ng-click = "setView('/register')">Register</a></h4>
+
+</div>

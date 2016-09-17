@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://www.springframework.org/schema/beans">
+
+	
+<context:property-placeholder location="classpath*:my.properties" />
+	<!-- SET default mail properties -->
+
+
+	<!-- <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl"> 
+		<property name="host" value="email.orca.ent"/> <property name="port" value="25"/> 
+		<property name="username" value=""/> <property name="password" value=""/> 
+		<property name="javaMailProperties"> <props> <prop key="mail.transport.protocol">smtp</prop> 
+		<prop key="mail.smtp.auth">false</prop> <prop key="mail.smtp.starttls.enable">true</prop> 
+		<prop key="mail.debug">true</prop> </props> </property> </bean> -->
+
+
+	<!--Support for annotations such as @RequestMapping @RequestBody etc -->
+	<mvc:annotation-driven />
+	
+	<!--Supports general annotations such as @Autowired and @PostConstruct etc -->
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.mati" />
+
+</beans>
